@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #b0539e;
+}
+
+/*Navigation bar */
+.navigation {
+	height: 40px;
+	overflow: hidden;
+	background-color: #333;
+}
+
+/*Navigation button*/
+.button {
+	height: 30px;
+	margin:0 auto;
+	background: white;
+	width: 50px;
+	line-height: 30px;
+	text-align: center;
+}
+
+/* Header/Blog Title */
+.header {
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  background: white;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+/* Remove underline from links until hover */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* Card section container */
+.card {
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1px 20px 20px;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+/* Inline images */
+.image{
+	float: left;
+}
+  
+  /* Modified card */
+.subheader {
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.permalink {
+	font-family:"Courier New", Courier, monospace;
+	font-size: 10px;
+}
+
+kbd /* verbatim style */
+{
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    background-color:#f7f7f7;
+    border:1px solid #ccc;
+    border-radius:3px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    color:#333;
+    display:inline-block;
+    font-family:"Courier New", Courier, monospace;
+    font-size:12px;
+    line-height:1.4;
+    margin:0 .1em;
+    padding:.1em .6em;
+    text-shadow:0 1px 0 #fff;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .card, .subheader {
+    width: 100%;
+	min-width: 160px;
+    padding: 1px 20px 20px;
+  }
+}
